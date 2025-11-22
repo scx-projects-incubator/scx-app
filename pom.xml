@@ -71,9 +71,73 @@
     <dependencies>
 
         <dependency>
+            <groupId>cool.scx</groupId>
+            <artifactId>scx-bean</artifactId>
+            <version>${scx-bean.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cool.scx</groupId>
+            <artifactId>scx-web</artifactId>
+            <version>${scx-web.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cool.scx</groupId>
+            <artifactId>scx-config</artifactId>
+            <version>${scx-config.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>dev.scx</groupId>
-            <artifactId>scx-reflect</artifactId>
-            <version>${scx-reflect.version}</version>
+            <artifactId>scx-scheduling</artifactId>
+            <version>${scx-scheduling.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cool.scx</groupId>
+            <artifactId>scx-http-x</artifactId>
+            <version>${scx-http-x.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cool.scx</groupId>
+            <artifactId>scx-websocket-x</artifactId>
+            <version>${scx-websocket-x.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cool.scx</groupId>
+            <artifactId>scx-jdbc-spy</artifactId>
+            <version>${scx-jdbc-spy.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cool.scx</groupId>
+            <artifactId>scx-data-jdbc</artifactId>
+            <version>${scx-data-jdbc.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.scx</groupId>
+            <artifactId>scx-logging</artifactId>
+            <version>${scx-logging.version}</version>
+        </dependency>
+
+        <!-- 数据库连接池 用于减少数据库连接创建时的性能消耗 -->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>${hikaricp.version}</version>
+        </dependency>
+
+        <!-- ****************** 以下为测试依赖 ****************** -->
+
+        <dependency>
+            <groupId>cool.scx</groupId>
+            <artifactId>scx-jdbc-mysql</artifactId>
+            <version>${scx-jdbc-mysql.version}</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- TestNG 测试包 -->
@@ -89,7 +153,17 @@
     <properties>
 
         <!-- *********************** 以下为依赖包版本 *********************** -->
-        <scx-reflect.version>0.0.1</scx-reflect.version>
+        <scx-bean.version>4.5.0-SNAPSHOT</scx-bean.version>
+        <scx-web.version>4.5.0-SNAPSHOT</scx-web.version>
+        <scx-config.version>4.5.0-SNAPSHOT</scx-config.version>
+        <scx-scheduling.version>0.0.1</scx-scheduling.version>
+        <scx-http-x.version>4.5.0-SNAPSHOT</scx-http-x.version>
+        <scx-websocket-x.version>4.5.0-SNAPSHOT</scx-websocket-x.version>
+        <scx-jdbc-spy.version>4.5.0-SNAPSHOT</scx-jdbc-spy.version>
+        <scx-data-jdbc.version>4.5.0-SNAPSHOT</scx-data-jdbc.version>
+        <scx-logging.version>0.0.1</scx-logging.version>
+        <hikaricp.version>7.0.2</hikaricp.version>
+        <scx-jdbc-mysql.version>4.5.0-SNAPSHOT</scx-jdbc-mysql.version>
         <testng.version>7.11.0</testng.version>
 
     </properties>
